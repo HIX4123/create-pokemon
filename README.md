@@ -1,3 +1,18 @@
+# Create + Cobblemon MODPACK
+
+## How to install
+
+### Using Prism Launcher
+
+1. create-pokemon.mrpack 다운
+2. Prism Launcher 실행 > 인스턴스 추가
+3. 불러오기 > 탐색하기
+4. 검색 필터를 Zip archive(\*.zip, \*.zipx)에서 Modrinth 팩(\*.mrpack)으로 변경 > 다운받은 create-pokemon.mrpack를 선택 > 열기
+5. OK
+6. 선택적 모드는 모두 체크 해제 (현재 호환성 문제 발생) > OK
+
+## Mod List
+
 - [Let Me Despawn](https://modrinth.com/mod/vE2FN5qn) [1.2.0] by frikinjay
 - [Traveler's Backpack](https://modrinth.com/mod/rlloIFEV) [1.20.1-9.1.9] by Tiviacz1337
 - [ModernFix](https://modrinth.com/mod/nmDcB62a) [5.14.0+mc1.20.1] by embeddedt
