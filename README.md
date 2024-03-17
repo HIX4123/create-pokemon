@@ -5,11 +5,90 @@
 ### Using Prism Launcher
 
 1. create-pokemon.mrpack 다운
+![1-1](image.png)
+![1-2](image-1.png)
 2. Prism Launcher 실행 > 인스턴스 추가
+![2-1](image-2.png)
 3. 불러오기 > 탐색하기
+![3-1](image-7.png)
 4. 검색 필터를 Zip archive(\*.zip, \*.zipx)에서 Modrinth 팩(\*.mrpack)으로 변경 > 다운받은 create-pokemon.mrpack를 선택 > 열기
+![4-1](image-4.png)
+![4-2](image-5.png)
 5. OK
+![5-1](image-6.png)
 6. 선택적 모드는 모두 체크 해제 (현재 호환성 문제 발생) > OK
+![6-1](image-8.png)
+
+## How to reduce lag
+
+필요한 만큼 이하의 항목을 수정하세요
+
+### Distant Horizons 관련
+
+32청크 이상의 매우 먼 거리를 렌더해주는 모드\
+탁 트인 시야보다 성능이 중요한 경우 아래의 방법으로 조절/비활성화 가능
+
+1. Esc > Options
+2. 왼쪽 위 작은 버튼 >
+3. LOD Render Distance Radius를 적당히 낮추거나 Quality Preset, CPU Load를 낮추세요
+4. 편의에 따라 Enable Rendering을 False로 바꿔 아예 꺼버려도 됩니다
+
+### 렌더 거리 관련
+
+위 Distant Horizons를 비활성화하고도 렉이 심한 경우 제일 유효한 방법\
+추가적으로 렌더 거리를 낮출 수 있다\
+7청크까지는 보통 큰 불편함이 없으니 참고
+
+1. Esc > Options
+2. Render Distance를 낮추세요
+3. 필요한 경우 Simulation Distance도 최하로 낮추세요
+
+### 기타
+
+여전히 불편한 경우 직접 프로파일링을 통해 렉을 많이 잡아먹는 모드를 찾을 수 있도록 spark라는 모드를 함께 설치해 두었음\
+
+1. 월드에서 명령어 `/sparkc profile start`를 입력
+2. 입력한 시점부터 플레이 과정에서의 리소스 사용량을 기록하기 시작한다
+3. 적당한 시간이 지났을 시 `/sparkc profile open`을 입력
+4. 약간 기다린 뒤(중간에 오류 표시가 뜰 수 있으나 무시) 채팅창에 뜨는 링크를 클릭 > Yes
+5. 브라우저에서 mods 탭 선택
+6. 그래프 아래쪽에 리소스 사용량 순서대로 모드가 정렬되어있음
+7. 사용량이 높은 모드를 찾아서 적당히 설정
+8. 이하의 모드들은 최적화 관련/필수 모드이므로 건드리지 말고 패스할 것
+   1. Clumps
+   2. Cull Less Leaves
+   3. Dynamic FPS
+   4. EntityCulling
+   5. Fabricloader
+   6. Fabric Lifecycle Events V1
+   7. Fabric Renderer API V1
+   8. Fabric Rendering V1
+   9. Fabric Screen API V1
+   10. FastQuit
+   11. FerriteCore
+   12. Hold That Chunk
+   13. ImmediatelyFast
+   14. Indium
+   15. Iris\
+   단, 쉐이더를 전혀 사용하지 않는다면 삭제 가능
+   16. Krypton
+   17. Language Reload
+   18. Let Me Despawn
+   19. Lithium
+   20. Memory Leak Fix
+   21. MixinTrace
+   22. ModernFix
+   23. More Culling
+   24. Not Enough Crashes
+   25. Puzzle
+   26. PuzzlesLib
+   27. Remove Reloading Screen
+   28. Sodium
+   29. Sodium Extra
+   30. Sodium Shadowy Path Blocks
+   31. spark
+   32. VMP(Very Many Players)
+   33. YOSBR
 
 ## Mod List
 
